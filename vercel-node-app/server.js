@@ -16,7 +16,7 @@ admin.initializeApp({
     credential: admin.credential.cert(credentials),
 });
 
-let initial_path = path.join(__dirname, "../ir_vsu");
+let initial_path = path.join(__dirname, "../vercel-node-app/public");
 
 console.log(initial_path)
 
