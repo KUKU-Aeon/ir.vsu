@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1">
+    <title>ВГУ: Факультет международных отношений: Контакты</title>
+    <link rel="icon" href="./favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+    <script type="text/javascript">
+        VK.init({ apiId: 8162036 });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="http://www.vsu.ru/" target="_blank"><img class="vsu_logo" src="img/vsu_logo-blue.svg"></a>
+        <button id="nav_button"></button>
+        <nav>
+            <a href="./pages/faculty.html">факультет</a>
+            <a href="./pages/news.html">события</a>
+            <ul id="my-drop-down-menu">
+                <li  class="list"><a href="./pages/abitur.html" class="links">абитуриентам</a>
+                <ul class="child">
+                    <li><a href="./pages/abitur.html#Бакалавриат">бакалавриат</a></li>
+                    <li> <a href="./pages/abitur.html#Магистратура">магистратура</a></li>
+                </ul>
+                </li>
+            </ul>
+            <a href="./pages/education.html">студентам</a>
+            <a href="./pages/science.html">наука</a>
+            <a href="./pages/int_coop.html">международное сотрудничество</a>
+            <a href="./pages/partners.html">партнёры</a>
+            <a href="./index.html">контакты</a>
+        </nav>
+        <a href="index.html"><img class="ir_logo" src="img/ir_logo.svg"></a>
+    </header>
+    <img src="img/ir_vsu.jpg_large" class="back_banner">
+<main>
+    <h2>Контакты</h2>
+    <h3>Мы в социальных сетях</h3>
+    <div id="vk_widget"></div>
+    <script type="text/javascript">
+        function VK_Widget_Init(){
+            document.getElementById('vk_widget').innerHTML = `<div id="vk_groups"></div>`;
+            VK.Widgets.Group("vk_groups", {mode: 1, width: "auto", height: 250, color1: "FFFFFF", color2: "FFFFFF", color3: "273C75"}, 68845717);
+        };
+        window.addEventListener('load', VK_Widget_Init, false );
+        window.addEventListener('resize', VK_Widget_Init, false);
+    </script>
+    <h3>Телефон деканата</h3>
+    <p>+7 (473) 239-29-31</p>
+    <h2>Вы можете найти нас здесь: </h2>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.5238564086217!2d39.18338351546126!3d51.705157879668086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b2f4abab5a5ff%3A0x6c472e7e20e4b8d2!2z0KTQsNC60YPQu9GM0YLQtdGCINC80LXQttC00YPQvdCw0YDQvtC00L3Ri9GFINC-0YLQvdC-0YjQtdC90LjQuSwg0JLQk9CjLCDQktC-0YDQvtC90LXQttGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDRg9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2sru!4v1647523963357!5m2!1sru!2sru" width="730" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p class="place"> 394068, г. Воронеж, Московский пр-т, 88<br>Воронежский государственный университет <br>учебный корпус № 8</p>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <a href="https://vk.com/fmo_vsu" target="_blank"><img src="../img/vk.png" alt=""></a>
+    </div>
+    <nav>
+        <a href="./pages/faculty.html">факультет</a>
+        <a href="./pages/news.html">события</a>
+        <a href="./pages/abitur.html">абитуриентам</a>
+        <a href="./pages/education.html">студентам</a>
+        <a href="./pages/science.html">наука</a>
+        <a href="./pages/int_coop.html">международное сотрудничество</a>
+        <a href="./pages/partners.html">партнёры</a>
+        <a href="./index.html">контакты</a>
+    </nav>
+    <div class="copy"><a href="http://www.vsu.ru/" target="_blank">Воронежский государственный университет</a><p>&copy;&nbsp;Факультет международных отношений ВГУ &bull; 2009&ndash;2022</p></div>
+</footer>
+</body>
+</html>

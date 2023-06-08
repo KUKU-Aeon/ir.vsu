@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1">
+    <title>Редактор новостей</title>
+    <link rel="icon" href="../favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="../favicon/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cardbanner.css">
+
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<header>
+    <a href="http://www.vsu.ru/"><img class="vsu_logo" src="img/vsu_logo-blue.svg"></a>
+    <button id="nav_button"></button>
+    <nav>
+        <a href="../pages/faculty.html">факультет</a>
+        <a href="../pages/news.html">события</a>
+        <ul id="my-drop-down-menu">
+            <li  class="list"><a href="../pages/abitur.html" class="link">абитуриентам</a>
+                <ul class="child">
+                    <li><a href="../pages/abitur.html#Бакалавриат">бакалавриат</a></li>
+                    <li> <a href="../pages/abitur.html#Магистратура">магистратура</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="../pages/education.html">студентам</a>
+        <a href="../pages/science.html">наука</a>
+        <a href="../pages/int_coop.html">международное сотрудничество</a>
+        <a href="../pages/partners.html">партенры</a>
+        <a href="../index.html">конатакты</a>
+    </nav>
+    <a href="../index.html"><img class="ir_logo" src="img/ir_logo.svg"></a>
+</header>
+<main>
+            <div class="tabs">
+                <div class="tabs__nav">
+                    <button class="tabs__btn tabs__btn_active">Добавить запись в разделе новость</button>
+                    <button class="tabs__btn">Добавить карту сотрудника</button>
+                    <button class="tabs__btn">Добавить запись в разделе студентам</button>
+                    <button class="tabs__btn">Добавить рапсисание в разделе студентам</button>
+                    <button class="tabs__btn">Открыть/закрыть вакансию/стажировку</button>
+                    <button class="tabs__btn">Добавить конференцию</button>
+                    <button class="tabs__btn">Добавить партнёра</button>
+                </div>
+                <div class="tabs__content">
+                    <div class="tabs__pane tabs__pane_show">
+                        <div class="banner">
+                            <input type="file" accept = "image/*" id="banner-uploads" hidden>
+                            <label for="banner-uploads" class="banner-upload-btn"><img src="img/upload.png"></label>
+                        </div>
+                        <div class="blog">
+                            <textarea type="text" class="title" placeholder="Введите заголовок..."></textarea>
+                            <textarea type="text" class="m_content" placeholder="Введите текст..."></textarea>
+                        </div>
+                        <div class="blog-options">
+                            <button class="btn dark publish-btn" id="1">Опублликовать</button>
+                            <input type="file" accept="*/*" id="image_upload" hidden>
+                            <label for="image_upload" class="btn grey upload_btn">Добавить файл/изображение</label>
+                    </div>
+                </div>
+
+                    <div class="tabs__pane">
+                        <div class="card_editor">
+                            <div class="card_banner"></div>
+                            <div class="info">
+                                <textarea type="text" class="name" placeholder="Введитя Ф.И.О."></textarea>
+                                <textarea type="text" class="profession" placeholder="Введите должность/ научную степень"></textarea>
+                                <textarea type="text" class="SCI" placeholder="Введите сферу научных интересов"></textarea>
+                                <textarea type="text" class="conferences" placeholder="Введите информацию о публикациях"></textarea>
+                                <textarea type="text" class="courses" placeholder="Введите информацию о преподоваемых курсах"></textarea>
+                                <textarea type="text" class="email" placeholder="Введите e-mail"></textarea>
+                                <textarea type="text" class="per_site" placeholder="Введите ссылку на персональный сайт"></textarea>
+
+                                <div class="card-image">
+                                    <input type="file" accept = "image/*" id="card-uploads" hidden>
+                                    <label for="card-uploads" class="card-upload-btn"><img src="img/upload.png"></label>
+                                </div>
+                            </div>
+                            <div class="card-options">
+                                <button class="btn dark publish-btn" id="2">Опублликовать</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Удалить карту сотрудника</h2>
+                            <label for="del_card">Выберите удаляему карту сорудника:</label>
+                            <select id="del_card">
+                            </select>
+                            <button id="delete_card" class="btn">Удалить карту сотрудника</button>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane">
+                        <div class="student_news">
+                            <textarea type="text" class="st_title" placeholder="Введите заголовок..."></textarea>
+                            <textarea type="text" class="st_m_content" placeholder="Введите текст..."></textarea>
+                            <input type="file"  name = "file" id="file-upload" accept="*/*" formaction="/" formenctype="multipart/form-data" hidden multiple>
+                            <label for="file-upload" class="file-upload-btn"><img src="img/upload.png"></label>
+                        </div>
+                        <div class="blog-options">
+                            <button class="btn dark publish-btn" id="3">Опублликовать</button>
+                        </div>
+                    </div>
+                    <div class="tabs__pane">
+                        <div class="blog">
+                            <h3>I курс, бакалавриат</h3>
+                            <textarea type="text" class="timetable" placeholder="I курс, бакалавриат"></textarea>
+                            <h3>II курс, бакалавриат</h3>
+                            <textarea type="text" class="timetable" placeholder="II курс, бакалавриат"></textarea>
+                            <h3>III курс, бакалавриат</h3>
+                            <textarea type="text" class="timetable" placeholder="III курс, бакалавриат"></textarea>
+                            <h3>IV курс, бакалавриат</h3>
+                            <textarea type="text" class="timetable" placeholder="IV курс, бакалавриат"></textarea>
+                            <h3>МО и МЗПЧ, магистры, I и II курсы</h3>
+                            <textarea type="text" class="timetable" placeholder="МО и МЗПЧ, магистры, I и II курсы"></textarea>
+                            <h3>БРР, магистры, I и II курсы</h3>
+                            <textarea type="text" class="timetable" placeholder="БРР, магистры, I и II курсы"></textarea>
+                            <h3>МБ и МТУ, магистры, I и II курсы</h3>
+                            <textarea type="text" class="timetable" placeholder="МБ и МТУ, магистры, I и II курсы"></textarea>
+                            <h3>ЗРВ, магистры, I и II курсы</h3>
+                            <textarea type="text" class="timetable" placeholder="ЗРВ, магистры, I и II курсы"></textarea>
+                        </div>
+                        <h3>Пожалуйста, нажмите на кнопку «Очистить» перед добавлением нового расписания</h3>
+                        <div class="conference-options">
+                            <button class="btn dark publish-btn" id="clear" style="margin-right: 20px;">Очистить</button>
+                            <button class="btn dark publish-btn" id="4">Опублликовать</button>
+                        </div>
+                    </div>
+                    <div class="tabs__pane">
+                        <h2>Открыть вакансию/стажировку:</h2>
+                        <div class="blog">
+                            <label for="type_of">Выберите тип добавляемого объекта:</label>
+                            <select id="type_of">
+                                <option value="vacancys">вакансия</option>
+                                <option value="internships">стажировка</option>
+                            </select>
+                            <textarea type="text" class="vacancy_title" placeholder="Введите наименование вакансии/стажировки..."></textarea>
+                            <textarea type="text" class="vacancy_content" placeholder="Введите краткое описание..."></textarea>
+                            <textarea type="text" class="vacancy_corp" placeholder="Введите название компании..."></textarea>
+                        </div>
+                        <div class="conference-options">
+                            <button class="btn dark publish-btn" id="5">Опублликовать</button>
+                        </div>
+                        <h2>Или же удалите вакансию/стажировку:</h2>
+                        <div>
+                            <label for="del_vacancy">Выберите закрываемую вакансию/стажировку:</label>
+                            <select id="del_vacancy">
+                            </select>
+                            <button id="delete_vacancy" class="btn">Закрыть вакансию/стажировку</button>
+                        </div>
+                    </div>
+                    <div class="tabs__pane">
+                        <div class="conference_banner">
+                            <input type="file" accept = "image/*" id="conference-uploads" hidden>
+                            <label for="conference-uploads" class="banner-upload-btn"><img src="img/upload.png"></label>
+                        </div>
+                        <div class="blog">
+                            <textarea type="text" class="conference_title" placeholder="Введите заголовок..."></textarea>
+                            <textarea type="text" class="conference_place" placeholder="Введите место проведения мерроприятия..."></textarea>
+                            <textarea type="text" class="conference_content" placeholder="Введите текст..."></textarea>
+                        </div>
+                        <div class="conference-options">
+                            <button class="btn dark publish-btn" id="6">Опублликовать</button>
+                            <input type="file" accept="*/*" id="conference_image_upload" hidden>
+                            <label for="conference_image_upload" class="btn grey upload_btn">Добавить файл/изображение</label>
+                        </div>
+                    </div>
+
+                    <div class="tabs__pane">
+                        <div class="partner_banner">
+                            <input type="file" accept = "image/*" id="partner-uploads" hidden>
+                            <label for="partner-uploads" class="banner-upload-btn"><img src="img/upload.png"></label>
+                        </div>
+                        <textarea type="text" class="partner_title" placeholder="Введите название..."></textarea>
+                        <textarea type="text" class="partner_content" placeholder="Введите описание..."></textarea>
+                        <textarea type="text" class="partner_source" placeholder="Введите ссылку на партнера (если есть)..."></textarea>
+                        <div class="partner-options">
+                            <button class="btn dark publish-btn" id="7">Опублликовать</button>
+                            <input type="file" accept="*/*" id="partner_image_upload" hidden>
+                            <label for="partner_image_upload" class="btn grey upload_btn">Добавить файл/изображение</label>
+                        </div>
+                        <h2>Или же удалите партнера:</h2>
+                        <div>
+                            <label for="del_partner">Выберите удаляемого партнёра:</label>
+                            <select id="del_partner">
+                            </select>
+                            <button id="delete_partner" class="btn">Удалить партнёра</button>
+                        </div>
+                    </div>
+
+            </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <a href="https://vk.com/fmo_vsu" target="_blank"><img src="../img/vk.png" alt=""></a>
+    </div>
+    <nav>
+        <a href="../pages/faculty.html">факультет</a>
+        <a href="../pages/news.html">события</a>
+        <a href="../pages/abitur.html">абитуриентам</a>
+        <a href="../pages/education.html">студентам</a>
+        <a href="../pages/science.html">наука</a>
+        <a href="../pages/int_coop.html">международное сотрудничество</a>
+        <a href="../pages/partners.html">партенры</a>
+        <a href="../index.html">конатакты</a>
+    </nav>
+    <div class="copy"><a href="http://www.vsu.ru/">Воронежский государственный университет</a><p>&copy;&nbsp;Факультет международных отношений ВГУ &bull; 2009&ndash;2022</p></div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<script src="../js/firebase.js"></script>
+<script src="../js/editor.js"></script>
+<script src="../js/card_editor.js"></script>
+<script src="../js/student_news_editor.js"></script>
+<script src="../js/conferences.js"></script>
+<script src="../js/vacancy.js"></script>
+<script src="../js/timetable.js"></script>
+<script src="../js/partners.js"></script>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,46 @@
+
+html{
+   overflow-y: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #273c75;
+        padding-top: 20%;
+    }
+
+    #login
+    {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #273c75;
+        padding: 5% 0;
+    }
+
+    #login
+    {
+        width: 60%;
+        margin: 5% 20%;
+        height: 400px;
+    }
+
+}

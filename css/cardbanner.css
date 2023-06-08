@@ -1,0 +1,306 @@
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card button{
+        border: none;
+        border-radius: 15px;
+        outline: none;
+        cursor: pointer;
+        color: #000000;
+        background-color: #d1d8e0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: max(1vw, 10px);
+        margin: 5% 25% 0 25%;
+        font-weight: bold;
+    }
+
+    .card_editor
+    {
+        background-color: #FFFFFF;
+        height: 100%;
+        width: 350px;
+        border-radius: 8px;
+        margin: 10% 30% 5% 30%;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-upload-btn{
+        position: absolute;
+        top: 38%;
+        left: 63%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+
+    .card
+    {
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        height: 250px;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+        animation: anim 1.5s forwards;
+    }
+
+    .info
+    {
+        width: 100%;
+        margin-top: -10%;display: flex;
+        flex-direction: column;
+    }
+
+    .name
+    {
+        font-size: max(1.15vw, 10px);
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        margin-top: 50%;
+        letter-spacing: 2px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .profession
+    {
+        font-size: 10px;
+        text-align: center;
+        color: #2d2d2d;
+        padding: 2%;
+        background-color: #FFFFFF;
+    }
+
+    .biography
+    {
+        color: #273c75;
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .photo
+    {
+        height: 250px;
+        width: 65.5vw !important;
+        position: absolute;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        transition: 1.5s;
+        border: none;
+    }
+
+    .card:hover .photo
+    {
+        transform: scale(0.5, 0.35) translateY(-250px);
+        background-size: 100% 125%;
+        background-position: 0 -25px;
+        border-radius: 50%;
+        border: none;
+    }
+
+    .card-options
+    {
+        font-family: 'Montserrat', sans-serif;
+        left: 0;
+        width: 95%;
+        height: 60px;
+        background: #FFFFFF;
+        z-index: 11;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_banner
+    {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        background: #e7e7e7e7;
+        background-size: cover;
+        border-radius: 8px;
+        margin: 0;
+    }
+
+    .card-upload-btn img
+    {
+        width: 100%;
+    }
+
+    textarea.name
+    {
+        margin-top: 5%;
+    }
+
+    textarea
+    {
+        margin: 3% 3%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .card button{
+        border: none;
+        border-radius: 15px;
+        outline: none;
+        cursor: pointer;
+        color: #000000;
+        background-color: #d1d8e0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: max(1vw, 10px);
+        margin: 5% 25% 0 25%;
+        font-weight: bold;
+    }
+
+    .card_editor
+    {
+        background-color: #FFFFFF;
+        height: 100%;
+        width: 350px;
+        border-radius: 8px;
+        margin: 10% 30% 5% 30%;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-upload-btn{
+        position: absolute;
+        top: 38%;
+        left: 63%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+
+.card
+{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    height: 300px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+    animation: anim 1.5s forwards;
+}
+
+.info
+{
+    width: 100%;
+    display: flex;
+    /* padding-top: 10%; */
+    flex-direction: column;
+}
+
+.name
+{
+    font-size: max(1.15vw, 14px);
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin-top: 50%;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.profession
+{
+    font-size: 10px;
+    text-align: center;
+    color: #2d2d2d;
+    padding: 2%;
+    background-color: #FFFFFF;
+}
+
+.biography
+{
+    color: #273c75;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    padding: 2%;
+}
+
+.photo
+{
+    height: 300px;
+    width: 20vw !important;
+    position: absolute;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1.5s;
+    border: none;
+}
+
+.card:hover .photo
+{
+    transform: scale(0.5, 0.35) translateY(-325px);
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+    border-radius: 50%;
+    border: none;
+}
+
+.card-options
+{
+    font-family: 'Montserrat', sans-serif;
+    left: 0;
+    width: 95%;
+    height: 60px;
+    background: #FFFFFF;
+    z-index: 11;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_banner
+{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background: #e7e7e7e7;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.card-upload-btn img
+{
+    width: 100%;
+}
+
+textarea.name
+{
+    margin-top: 5%;
+}
+
+textarea
+{
+    margin: 3% 3%;
+    text-align: center;
+}
+
+}

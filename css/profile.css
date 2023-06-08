@@ -1,0 +1,121 @@
+@media screen and (min-width: 700px) {
+    .profile {
+        display: grid;
+        margin-top: 5%;
+        grid-template-rows: none;
+
+    }
+
+    .heading {
+        display: grid;
+        grid-template-columns: 30% 75%;
+        grid-template-areas: "A B";
+        grid-gap: 5%;
+    }
+
+    .photo {
+        width: 100%;
+        height: 350px;
+        box-shadow: 5px 5px #273c75;
+    }
+
+    .information {
+        grid-area: B;
+        width: 75%;
+    }
+
+    h1 {
+        font-size: max(2.75vw, 16px) !important;
+    }
+
+    h2 {
+        font-size: max(1.5vw, 12px) !important;
+    }
+
+    p, ul
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: max(1.75vw, 12px);
+    }
+
+    a
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: max(1.75vw, 12px);
+        font-weight: bold;
+        cursor: pointer;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a:hover{
+        transition: 0.5s;
+        color: #273c75;
+    }
+
+    .dissertation, .SCI, .publications
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: max(1.25vw, 14px);
+        width: 80%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .profile {
+        display: grid;
+        margin-top: 25%;
+        grid-template-rows: none;
+
+    }
+
+    .heading {
+        display: grid;
+        grid-template-columns: 35% 57%;
+        grid-template-areas: "A B";
+        grid-gap: 8.5%;
+    }
+
+    .photo {
+        width: 150px;
+        height: 155px;
+        box-shadow: 5px 5px #273c75;
+    }
+
+    .information {
+        grid-area: B;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: max(2.75vw, 16px) !important;
+    }
+
+    h2 {
+        font-size: max(1.5vw, 12px) !important;
+    }
+
+    p, ul
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: max(1.75vw, 12px);
+    }
+
+    a
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: max(1.75vw, 12px);
+        font-weight: bold;
+        cursor: pointer;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a:hover{
+        transition: 0.5s;
+        color: #273c75;
+    }
+
+
+}
